@@ -10,6 +10,7 @@ public class RoundRestartHandler : CustomEventsHandler {
     var overwatchPlayerIds =
       from player in Player.List
       where player.Role == RoleTypeId.Overwatch
+      where player.HasPermission(PlayerPermissions.ForceclassSelf)
       select player.UserId;
     
     PersistentOverwatch.Instance.OverwatchIds.UnionWith(overwatchPlayerIds); 
