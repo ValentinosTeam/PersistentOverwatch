@@ -52,3 +52,9 @@ CodeCoverage/
 *.VisualState.xml
 TestResult.xml
 nunit-*.xml
+
+# Jetbrains generated files
+.idea/
+Folder.DotSettings.user
+PersistentOverwatch/.idea/
+PersistentOverwatch/Folder.DotSettings.user
